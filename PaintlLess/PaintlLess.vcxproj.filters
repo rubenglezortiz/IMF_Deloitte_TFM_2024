@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado\game">
+      <UniqueIdentifier>{b3f4f909-7b1f-4f5d-946c-81de41d973b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\game">
+      <UniqueIdentifier>{65934546-09f1-4af8-a5ce-cf5cdf435970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\utils">
+      <UniqueIdentifier>{2ed08eab-729b-4ada-9669-3aa343c13192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\utils">
+      <UniqueIdentifier>{89aa933e-b0ed-4da5-967c-7618a14a34ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\sdlutils">
+      <UniqueIdentifier>{9ba2dc7c-22db-4e4c-9674-4b2b4788ac3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\sdlutils">
+      <UniqueIdentifier>{3fe364fd-d475-4387-8088-b172bfb434f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ecs">
+      <UniqueIdentifier>{79072d09-6900-499d-bea9-63dd709534ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ecs">
+      <UniqueIdentifier>{b1186889-9cd2-4846-80bb-15d562e8dc38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\json">
+      <UniqueIdentifier>{ec5acde8-790a-45f4-96fe-17a9629dad85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\json">
+      <UniqueIdentifier>{d3c769ca-635c-4d89-bb18-cd6b64615a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\components">
+      <UniqueIdentifier>{f50b8153-ffb7-47e7-9e13-e8af5ed4a982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\components">
+      <UniqueIdentifier>{223f19f1-f263-42ae-a4ea-6f3d9e6caef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\tmxlite">
+      <UniqueIdentifier>{533ca5cf-627d-43f7-812c-93cab7770579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\components\abilities">
+      <UniqueIdentifier>{a87ff4ce-4ba5-4b55-bec5-39e16b274705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\components\abilities">
+      <UniqueIdentifier>{52790520-c9ca-42ca-bfbc-86859afe6a0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assets\game\Game.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\utils\Collisions.cpp">
+      <Filter>Archivos de origen\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\utils\Vector2D.cpp">
+      <Filter>Archivos de origen\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\sdlutils\Texture.cpp">
+      <Filter>Archivos de origen\sdlutils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\sdlutils\RandomNumberGenerator.cpp">
+      <Filter>Archivos de origen\sdlutils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\sdlutils\SDLUtils.cpp">
+      <Filter>Archivos de origen\sdlutils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\sdlutils\SoundEffect.cpp">
+      <Filter>Archivos de origen\sdlutils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\ecs\Manager.cpp">
+      <Filter>Archivos de origen\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\ecs\Entity.cpp">
+      <Filter>Archivos de origen\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\json\JSON.cpp">
+      <Filter>Archivos de origen\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\json\json_demo.cpp">
+      <Filter>Archivos de origen\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\json\JSONValue.cpp">
+      <Filter>Archivos de origen\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Transform.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Image.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\GameMap.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\GameStateMachine.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\GameState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\PlayState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\MainMenuState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\MenuButton.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\CharacterSelectionState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="CharactersSelected.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\miniz.c">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\FreeFuncs.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\ImageLayer.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\LayerGroup.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\Map.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\Object.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\ObjectGroup.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\Property.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\TileLayer.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\Tileset.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tmxlite\src\detail\pugixml.cpp">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Health.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Attack.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Movimiento.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\CardInfo.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\PointOnImage.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\DeckSpawn.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Architect.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Bomb.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Creeper.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Druid.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Golem.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Kirin.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Priest.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Rogue.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Tank.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Viking.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Wolf.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonSelected.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonHovered.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Alchemist.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonCharacterSelection.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonPlay.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Interfaz.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Transform2.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\FramedImage.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\DescriptionState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonDescription.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\FinState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonVolume.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\SoundManager.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\Network.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\AbilityStruct.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\Ability_Skeleton.cpp">
+      <Filter>Archivos de origen\components\abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\EntityFactory.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\DieAfterXTurns.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonSettings.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonSurrender.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ButtonTick.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\UniversalShader.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\components\ComponentBuffer.cpp">
+      <Filter>Archivos de origen\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\ControlState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\game\SettingsState.cpp">
+      <Filter>Archivos de origen\game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assets\game\ecs_defs.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\Game.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\utils\Vector2D.h">
+      <Filter>Archivos de encabezado\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\utils\Collisions.h">
+      <Filter>Archivos de encabezado\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\utils\Singleton.h">
+      <Filter>Archivos de encabezado\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\VirtualTimer.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\Font.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\InputHandler.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\macros.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\Music.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\RandomNumberGenerator.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\sdlutils_demo.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\SoundEffect.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\Texture.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\sdlutils\SDLUtils.h">
+      <Filter>Archivos de encabezado\sdlutils</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\mpl.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\Component.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\ecs.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\ecs_defs_example.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\Entity.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\ecs\Manager.h">
+      <Filter>Archivos de encabezado\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\json\JSON.h">
+      <Filter>Archivos de encabezado\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\json\json_demo.h">
+      <Filter>Archivos de encabezado\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\json\JSONValue.h">
+      <Filter>Archivos de encabezado\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Image.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Transform.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\PointOnImage.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Movimiento.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\GameMap.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\GameState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\GameStateMachine.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\PlayState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\MainMenuState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\MenuButton.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\Values.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\CharacterSelectionState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="CharactersSelected.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="LerpingFunctions.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="tmxlite\src\miniz.h">
+      <Filter>Archivos de origen\tmxlite</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Health.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Attack.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\CardInfo.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\DeckSpawn.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Architect.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Bomb.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Creeper.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Druid.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Golem.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Kirin.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Priest.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Rogue.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Tank.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Viking.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonSelected.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\OffsetInfo.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Wolf.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonHovered.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Alchemist.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Transform2.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonPlay.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Interfaz.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonCharacterSelection.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonVolume.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\FramedImage.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\DescriptionState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonDescription.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\FinState.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\SoundManager.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\SettingsState.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonSettings.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonTick.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ButtonSurrender.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\network_message.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\network_types.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\Network.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\EntityFactory.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\AbilityStruct.h">
+      <Filter>Archivos de encabezado\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\Ability_Skeleton.h">
+      <Filter>Archivos de encabezado\components\abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\DieAfterXTurns.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\game\ControlState.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\UniversalShader.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\components\ComponentBuffer.h">
+      <Filter>Archivos de encabezado\components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\config\resources.json">
+      <Filter>Archivos de recursos</Filter>
+    </None>
+  </ItemGroup>
+</Project>

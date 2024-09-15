@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4d4b21f6-ff03-4c16-b199-8ed3164eb2dc}</ProjectGuid>
+    <RootNamespace>PaintlLess</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)SDL2\include;$(SolutionDir)SDL2_image-2.0.1\include;$(SolutionDir)SDL2_mixer-2.0.2\include;$(SolutionDir)SDL2_net-2.0.1\include;$(SolutionDir)SDL2_ttf-2.0.14\include;$(SolutionDir)tmxlite\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\lib\x64;$(SolutionDir)SDL2_image-2.0.1\lib\x64;$(SolutionDir)SDL2_mixer-2.0.2\lib\x64;$(SolutionDir)SDL2_net-2.0.1\lib\x64;$(SolutionDir)SDL2_ttf-2.0.14\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>SDL2/include;SDL2_image-2.0.1/include;SDL2_mixer-2.0.2/include;SDL2_net-2.0.1/include;SDL2_ttf-2.0.14/include;tmxlite/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_net.lib;SDL2_ttf.lib;tmxlite.lib;tmxlite-d.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>SDL2/lib/x64;SDL2_image-2.0.1/lib/x64;SDL2_mixer-2.0.2/lib/x64;SDL2_net-2.0.1/lib/x64;SDL2_ttf-2.0.14/lib/x64;tmxlite/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>SDL2/include;SDL2_image-2.0.1/include;SDL2_mixer-2.0.2/include;SDL2_net-2.0.1/include;SDL2_ttf-2.0.14/include;tmxlite/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>SDL2/lib/x64;SDL2_image-2.0.1/lib/x64;SDL2_mixer-2.0.2/lib/x64;SDL2_net-2.0.1/lib/x64;SDL2_ttf-2.0.14/lib/x64;tmxlite/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_net.lib;SDL2_ttf.lib;tmxlite.lib;tmxlite-d.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Assets\components\Ability.cpp" />
+    <ClCompile Include="Assets\components\Ability_Alchemist.cpp" />
+    <ClCompile Include="Assets\components\Ability_Bomb.cpp" />
+    <ClCompile Include="Assets\components\Ability_Creeper.cpp" />
+    <ClCompile Include="Assets\components\Ability_Druid.cpp" />
+    <ClCompile Include="Assets\components\Ability_Golem.cpp" />
+    <ClCompile Include="Assets\components\Ability_Kirin.cpp" />
+    <ClCompile Include="Assets\components\Ability_Priest.cpp" />
+    <ClCompile Include="Assets\components\Ability_Rogue.cpp" />
+    <ClCompile Include="Assets\components\Ability_Skeleton.cpp" />
+    <ClCompile Include="Assets\components\Ability_Tank.cpp" />
+    <ClCompile Include="Assets\components\Ability_Viking.cpp" />
+    <ClCompile Include="Assets\components\Ability_Wolf.cpp" />
+    <ClCompile Include="Assets\components\Attack.cpp" />
+    <ClCompile Include="Assets\components\ButtonCharacterSelection.cpp" />
+    <ClCompile Include="Assets\components\ButtonDescription.cpp" />
+    <ClCompile Include="Assets\components\ButtonHovered.cpp" />
+    <ClCompile Include="Assets\components\ButtonPlay.cpp" />
+    <ClCompile Include="Assets\components\ButtonSelected.cpp" />
+    <ClCompile Include="Assets\components\ButtonSettings.cpp" />
+    <ClCompile Include="Assets\components\ButtonSurrender.cpp" />
+    <ClCompile Include="Assets\components\ButtonTick.cpp" />
+    <ClCompile Include="Assets\components\ButtonVolume.cpp" />
+    <ClCompile Include="Assets\components\ComponentBuffer.cpp" />
+    <ClCompile Include="Assets\components\DeckSpawn.cpp" />
+    <ClCompile Include="Assets\components\DieAfterXTurns.cpp" />
+    <ClCompile Include="Assets\components\EntityFactory.cpp" />
+    <ClCompile Include="Assets\components\FramedImage.cpp" />
+    <ClCompile Include="Assets\components\GameMap.cpp" />
+    <ClCompile Include="Assets\components\Health.cpp" />
+    <ClCompile Include="Assets\components\Image.cpp" />
+    <ClCompile Include="Assets\components\Interfaz.cpp" />
+    <ClCompile Include="Assets\components\MenuButton.cpp" />
+    <ClCompile Include="Assets\components\Movimiento.cpp" />
+    <ClCompile Include="Assets\components\Ability_Architect.cpp" />
+    <ClCompile Include="Assets\components\PointOnImage.cpp" />
+    <ClCompile Include="Assets\components\Transform.cpp" />
+    <ClCompile Include="Assets\components\Transform2.cpp" />
+    <ClCompile Include="Assets\components\UniversalShader.cpp" />
+    <ClCompile Include="Assets\ecs\Entity.cpp" />
+    <ClCompile Include="Assets\ecs\Manager.cpp" />
+    <ClCompile Include="Assets\game\AbilityStruct.cpp" />
+    <ClCompile Include="Assets\game\CardInfo.cpp" />
+    <ClCompile Include="Assets\game\CharacterSelectionState.cpp" />
+    <ClCompile Include="Assets\game\ControlState.cpp" />
+    <ClCompile Include="Assets\game\DescriptionState.cpp" />
+    <ClCompile Include="Assets\game\FinState.cpp" />
+    <ClCompile Include="Assets\game\Game.cpp" />
+    <ClCompile Include="Assets\game\GameState.cpp" />
+    <ClCompile Include="Assets\game\GameStateMachine.cpp" />
+    <ClCompile Include="Assets\game\MainMenuState.cpp" />
+    <ClCompile Include="Assets\game\Network.cpp" />
+    <ClCompile Include="Assets\game\PlayState.cpp" />
+    <ClCompile Include="Assets\game\SettingsState.cpp" />
+    <ClCompile Include="Assets\game\SoundManager.cpp" />
+    <ClCompile Include="Assets\json\JSON.cpp" />
+    <ClCompile Include="Assets\json\JSONValue.cpp" />
+    <ClCompile Include="Assets\json\json_demo.cpp" />
+    <ClCompile Include="Assets\sdlutils\RandomNumberGenerator.cpp" />
+    <ClCompile Include="Assets\sdlutils\SDLUtils.cpp" />
+    <ClCompile Include="Assets\sdlutils\SoundEffect.cpp" />
+    <ClCompile Include="Assets\sdlutils\Texture.cpp" />
+    <ClCompile Include="Assets\utils\Collisions.cpp" />
+    <ClCompile Include="Assets\utils\Vector2D.cpp" />
+    <ClCompile Include="CharactersSelected.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tmxlite\src\detail\pugixml.cpp" />
+    <ClCompile Include="tmxlite\src\FreeFuncs.cpp" />
+    <ClCompile Include="tmxlite\src\ImageLayer.cpp" />
+    <ClCompile Include="tmxlite\src\LayerGroup.cpp" />
+    <ClCompile Include="tmxlite\src\Map.cpp" />
+    <ClCompile Include="tmxlite\src\miniz.c" />
+    <ClCompile Include="tmxlite\src\Object.cpp" />
+    <ClCompile Include="tmxlite\src\ObjectGroup.cpp" />
+    <ClCompile Include="tmxlite\src\Property.cpp" />
+    <ClCompile Include="tmxlite\src\TileLayer.cpp" />
+    <ClCompile Include="tmxlite\src\Tileset.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assets\components\Ability.h" />
+    <ClInclude Include="Assets\components\Ability_Alchemist.h" />
+    <ClInclude Include="Assets\components\Ability_Architect.h" />
+    <ClInclude Include="Assets\components\Ability_Bomb.h" />
+    <ClInclude Include="Assets\components\Ability_Creeper.h" />
+    <ClInclude Include="Assets\components\Ability_Druid.h" />
+    <ClInclude Include="Assets\components\Ability_Golem.h" />
+    <ClInclude Include="Assets\components\Ability_Kirin.h" />
+    <ClInclude Include="Assets\components\Ability_Priest.h" />
+    <ClInclude Include="Assets\components\Ability_Rogue.h" />
+    <ClInclude Include="Assets\components\Ability_Skeleton.h" />
+    <ClInclude Include="Assets\components\Ability_Tank.h" />
+    <ClInclude Include="Assets\components\Ability_Viking.h" />
+    <ClInclude Include="Assets\components\Ability_Wolf.h" />
+    <ClInclude Include="Assets\components\Attack.h" />
+    <ClInclude Include="Assets\components\ButtonCharacterSelection.h" />
+    <ClInclude Include="Assets\components\ButtonDescription.h" />
+    <ClInclude Include="Assets\components\ButtonHovered.h" />
+    <ClInclude Include="Assets\components\ButtonPlay.h" />
+    <ClInclude Include="Assets\components\ButtonSelected.h" />
+    <ClInclude Include="Assets\components\ButtonSettings.h" />
+    <ClInclude Include="Assets\components\ButtonSurrender.h" />
+    <ClInclude Include="Assets\components\ButtonTick.h" />
+    <ClInclude Include="Assets\components\ButtonVolume.h" />
+    <ClInclude Include="Assets\components\ComponentBuffer.h" />
+    <ClInclude Include="Assets\components\DeckSpawn.h" />
+    <ClInclude Include="Assets\components\DieAfterXTurns.h" />
+    <ClInclude Include="Assets\components\EntityFactory.h" />
+    <ClInclude Include="Assets\components\FramedImage.h" />
+    <ClInclude Include="Assets\components\GameMap.h" />
+    <ClInclude Include="Assets\components\Health.h" />
+    <ClInclude Include="Assets\components\Image.h" />
+    <ClInclude Include="Assets\components\Interfaz.h" />
+    <ClInclude Include="Assets\components\MenuButton.h" />
+    <ClInclude Include="Assets\components\Movimiento.h" />
+    <ClInclude Include="Assets\components\PointOnImage.h" />
+    <ClInclude Include="Assets\components\Transform.h" />
+    <ClInclude Include="Assets\components\Transform2.h" />
+    <ClInclude Include="Assets\components\UniversalShader.h" />
+    <ClInclude Include="Assets\ecs\Component.h" />
+    <ClInclude Include="Assets\ecs\ecs.h" />
+    <ClInclude Include="Assets\ecs\ecs_defs_example.h" />
+    <ClInclude Include="Assets\ecs\Entity.h" />
+    <ClInclude Include="Assets\ecs\Manager.h" />
+    <ClInclude Include="Assets\ecs\mpl.h" />
+    <ClInclude Include="Assets\game\AbilityStruct.h" />
+    <ClInclude Include="Assets\game\CardInfo.h" />
+    <ClInclude Include="Assets\game\CharacterSelectionState.h" />
+    <ClInclude Include="Assets\game\ControlState.h" />
+    <ClInclude Include="Assets\game\DescriptionState.h" />
+    <ClInclude Include="Assets\game\ecs_defs.h" />
+    <ClInclude Include="Assets\game\FinState.h" />
+    <ClInclude Include="Assets\game\Game.h" />
+    <ClInclude Include="Assets\game\GameState.h" />
+    <ClInclude Include="Assets\game\GameStateMachine.h" />
+    <ClInclude Include="Assets\game\MainMenuState.h" />
+    <ClInclude Include="Assets\game\Network.h" />
+    <ClInclude Include="Assets\game\network_message.h" />
+    <ClInclude Include="Assets\game\network_types.h" />
+    <ClInclude Include="Assets\game\OffsetInfo.h" />
+    <ClInclude Include="Assets\game\PlayState.h" />
+    <ClInclude Include="Assets\game\SettingsState.h" />
+    <ClInclude Include="Assets\game\SoundManager.h" />
+    <ClInclude Include="Assets\game\Values.h" />
+    <ClInclude Include="Assets\json\JSON.h" />
+    <ClInclude Include="Assets\json\JSONValue.h" />
+    <ClInclude Include="Assets\json\json_demo.h" />
+    <ClInclude Include="Assets\sdlutils\Font.h" />
+    <ClInclude Include="Assets\sdlutils\InputHandler.h" />
+    <ClInclude Include="Assets\sdlutils\macros.h" />
+    <ClInclude Include="Assets\sdlutils\Music.h" />
+    <ClInclude Include="Assets\sdlutils\RandomNumberGenerator.h" />
+    <ClInclude Include="Assets\sdlutils\SDLUtils.h" />
+    <ClInclude Include="Assets\sdlutils\sdlutils_demo.h" />
+    <ClInclude Include="Assets\sdlutils\SoundEffect.h" />
+    <ClInclude Include="Assets\sdlutils\Texture.h" />
+    <ClInclude Include="Assets\sdlutils\VirtualTimer.h" />
+    <ClInclude Include="Assets\utils\Collisions.h" />
+    <ClInclude Include="Assets\utils\Singleton.h" />
+    <ClInclude Include="Assets\utils\Vector2D.h" />
+    <ClInclude Include="CharactersSelected.h" />
+    <ClInclude Include="LerpingFunctions.h" />
+    <ClInclude Include="tmxlite\src\miniz.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\config\resources.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties resources_4config_4resources_1json__JsonSchema="https://bitbucket.org/atlassianlabs/atlascode/raw/main/resources/schemas/pipelines-schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
