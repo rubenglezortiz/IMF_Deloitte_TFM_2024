@@ -39,7 +39,7 @@ void SDLUtils::initWindow() {
 	// Create window
 	window_ = SDL_CreateWindow(windowTitle_.c_str(),
 	SDL_WINDOWPOS_UNDEFINED,
-	SDL_WINDOWPOS_UNDEFINED, width_, height_, SDL_WINDOW_FULLSCREEN_DESKTOP /*SDL_WINDOW_SHOWN*/); //SDL_WINDOW_FULLSCREEN y en el init en game.cpp 1920x1080
+	SDL_WINDOWPOS_UNDEFINED, width_, height_, SDL_WINDOW_SHOWN /*SDL_WINDOW_SHOWN*/); //SDL_WINDOW_FULLSCREEN y en el init en game.cpp 1920x1080
 	assert(window_ != nullptr);
 
 	// Create the renderer
