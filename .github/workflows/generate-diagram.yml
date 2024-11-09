@@ -1,0 +1,40 @@
+name: Generate UML Class Diagram
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate-diagrams:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Checkout del código fuente
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Paso 2: Instalar Doxygen y PlantUML
+      - name: Install Doxygen and Java
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen default-jre
+
+      - name: Download PlantUML
+        run: |
+          mkdir plantuml
+          curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml/plantuml.jar
+
+      # Paso 3: Generar documentación con Doxygen
+      - name: Generate Doxygen Documentation
+        run: doxygen Doxyfile
+
+      # Paso 4: Subir el diagrama de clases generado como artefacto
+      - name: Upload Class Diagram
+        uses: actions/upload-artifact@v4
+        with:
+          name: class-diagram
+          path: docs/xml/index.xml

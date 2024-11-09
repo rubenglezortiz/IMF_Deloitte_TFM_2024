@@ -1,0 +1,14 @@
+PROJECT_NAME = "PaintLess Project"
+OUTPUT_DIRECTORY = docs
+INPUT = PaintLess
+RECURSIVE = YES
+
+# PlantUML configuration
+GENERATE_UML = YES
+UML_LOOK = YES
+PLANTUML_JAR_PATH = plantuml/plantuml.jar
+
+# Output format
+GENERATE_LATEX = NO
+GENERATE_HTML = NO
+GENERATE_XML = YES

@@ -1,0 +1,26 @@
+@startuml
+
+class Usuario {
+  - nombre: string
+  - edad: int
+  + login(): void
+  + logout(): void
+}
+
+class Partida {
+  - idPartida: int
+  - fecha: Date
+  + iniciar(): void
+  + finalizar(): void
+}
+
+class Juego {
+  - nombre: string
+  + iniciarPartida(): Partida
+  + añadirUsuario(usuario: Usuario): void
+}
+
+Usuario --> Partida : "participa en"
+Partida *-- Juego : "es parte de"
+
+@enduml
