@@ -25,7 +25,7 @@ jobs:
 
       # Paso 4: Subir el archivo como artefacto
       - name: Upload text file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hola-mundo
           path: hola.txt
