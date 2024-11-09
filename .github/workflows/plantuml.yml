@@ -13,7 +13,7 @@ jobs:
     steps:
       # Paso 1: Checkout del código (necesario aunque no modifiquemos nada)
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Paso 2: Crear un archivo .txt con "Hola Mundo"
       - name: Create a text file
