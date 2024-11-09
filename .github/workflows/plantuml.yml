@@ -1,0 +1,32 @@
+name: Example Workflow
+
+# Ejecutar este workflow en cada push a la rama "main"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Checkout del código (necesario aunque no modifiquemos nada)
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Paso 2: Crear un archivo .txt con "Hola Mundo"
+      - name: Create a text file
+        run: echo "Hola Mundo" > hola.txt
+
+      # Paso 3: Mostrar el contenido del archivo creado en los logs (opcional)
+      - name: Display file content
+        run: cat hola.txt
+
+      # Paso 4: Subir el archivo como artefacto
+      - name: Upload text file
+        uses: actions/upload-artifact@v3
+        with:
+          name: hola-mundo
+          path: hola.txt
+
