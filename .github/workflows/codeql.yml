@@ -24,6 +24,10 @@ jobs:
       with:
         languages: cpp # Definir el lenguaje
         paths: PaintLess/Assets/components # Cambia 'PaintLess/' por la ruta donde está tu código fuente
+        
+    - name: Force file detection
+      run: |
+        find . -name '*.cpp' -o -name '*.h'
 
     # Paso 3: Ejecutar el análisis
     - name: Perform CodeQL Analysis
