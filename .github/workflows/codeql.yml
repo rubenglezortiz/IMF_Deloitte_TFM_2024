@@ -30,7 +30,7 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Build solution
-        run: msbuild PaintlLess/PaintLess.sln /t:Rebuild /p:Configuration=Debug
+        run: msbuild PaintLess/PaintLess.sln /t:Rebuild /p:Configuration=Debug
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
