@@ -213,8 +213,12 @@ void TileLayer::parseCSV(const pugi::xml_node& node)
 
                     chunk.size.x = childNode.attribute("width").as_int();
                     chunk.size.y = childNode.attribute("height").as_int();
+                    
+                    int64_t aux1 = static_cast<int64_t>(chunk.size.x);
+                    int64_t aux2 = static_cast<int64_t>(chunk.size.y);
+                    auto totalSize = aux1 * aux2;
 
-                    auto IDs = processDataString(dataString, chunk.size.x * chunk.size.y);
+                    auto IDs = processDataString(dataString, totalSize);
 
                     if (!IDs.empty())
                     {
